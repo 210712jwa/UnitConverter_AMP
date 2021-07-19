@@ -7,8 +7,7 @@ public class Converter {
 	public static void main(String[] args) {
 
 		Scanner userConvert = new Scanner(System.in); // User chooses which conversion to do
-		
-		
+
 		int temp = 0;
 		while (temp != 3) {
 			
@@ -56,16 +55,21 @@ public class Converter {
 		
 		int units = userUnits.nextInt();
 		
-		System.out.println("Now enter the amount that you want converted.");
-		
 		double convo = 0.0; //number that contains the converted value
 		
 		if (units == 1) { 
+			System.out.println("Now enter the amount that you want converted.");
 			convo = teaToTable();
 		}
 		
 		else if (units == 2) {
+			System.out.println("Now enter the amount that you want converted.");
 			convo = teaToCups();
+		}
+		
+		else {
+			System.out.println("Invalid choice. Reenter:.\n\n");
+			convo = convertVolume();
 		}
 		
 		return convo;
@@ -80,16 +84,23 @@ public class Converter {
 		
 		int units = userUnits.nextInt();
 		
-		System.out.println("Now enter the amount that you want converted.");
+		
 		
 		double convo = 0.0; //contains the converted value
 		
 		if (units == 1) { 
+			System.out.println("Now enter the amount that you want converted.");
 			convo = feetToMeters();
 		}
 		
 		else if (units == 2) {
+			System.out.println("Now enter the amount that you want converted.");
 			convo = milesToKilos();
+		}
+		
+		else {
+			System.out.println("Invalid choice. Reenter:.\n\n");
+			convo = convertVolume();
 		}
 		
 		return convo;
