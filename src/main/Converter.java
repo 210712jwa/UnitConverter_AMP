@@ -11,11 +11,6 @@ public class Converter {
 		
 		int temp = 0;
 		while (temp != 3) {
-//			System.out.println("Please Select an option:");
-//			System.out.println("1. Cups to Teaspoons:");
-//			System.out.println("2. Miles to Kilometers");
-//			System.out.println("3. US Gallons to Liters");
-//			System.out.println("4. Quit");
 			
 			System.out.println("What kind of Units would you like to convert?\n");
 			System.out.println("1. Volumetric Units");
@@ -47,40 +42,6 @@ public class Converter {
 			System.out.println("The resulting conversion is " + newValue);
 			
 			temp = convert;
-			
-			
-
-//			switch (convert) {
-//			case 1: {
-//				// Cups to Teaspoons
-//				System.out.println("Now enter the amount that you want converted.");
-//				double amount = userAmount.nextDouble();
-//				System.out.println(amount + " Cups is equal to " + (amount * 16.0) + " Teaspoons\n");
-//				break;
-//			}
-//			case 2: {
-//				// Miles to Kilometers
-//				System.out.println("Now enter the amount that you want converted.");
-//				double amount = userAmount.nextDouble();
-//				System.out.println(amount + " Miles is approx. equal to " + (amount * 1.609344) + " Kilometers\n");
-//				break;
-//			}
-//			case 3: {
-//				// US Gallons to Imperial Gallons
-//				System.out.println("Now enter the amount that you want converted.");
-//				double amount = userAmount.nextDouble();
-//				System.out.println(amount + " US Gallons is approx. equal to " + (amount * 3.785) + " Liters\n");
-//				break;
-//			}
-//			case 4: {
-//				// Quit
-//				System.out.println("Thank you for using this converter! Goodbye.\n");
-//				break;
-//			}
-//			default: {
-//				System.out.println("That number is invalid. Please reenter.\n");
-//			}
-//			}
 
 		}
 
@@ -121,7 +82,7 @@ public class Converter {
 		
 		System.out.println("Now enter the amount that you want converted.");
 		
-		double convo = 0.0; //number that contains the converted value
+		double convo = 0.0; //contains the converted value
 		
 		if (units == 1) { 
 			convo = feetToMeters();
