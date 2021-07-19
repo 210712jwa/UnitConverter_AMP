@@ -12,7 +12,7 @@ public class Converter {
 		int temp = 0;
 		while (temp != 3) {
 			
-			System.out.println("What kind of Units would you like to convert?\n");
+			System.out.println("\nWhat kind of Units would you like to convert?\n");
 			System.out.println("1. Volumetric Units");
 			System.out.println("2. Distance Units");
 			System.out.println("3. Quit");
@@ -39,7 +39,7 @@ public class Converter {
 				System.out.println("Invalid choice. Restarting...\n\n");
 			}
 			
-			System.out.println("The resulting conversion is " + newValue);
+			System.out.println("\nThe resulting conversion is " + newValue + " Units.");
 			
 			temp = convert;
 
